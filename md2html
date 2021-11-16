@@ -7,7 +7,7 @@ WIKI_PATH="$1"
 # Default args to process and pass to pandoc
 IN_FORMAT='markdown'
 EXT='md'
-OUT_DIR="./html"
+OUT_DIR="./docs"
 CSS_FILE="./css/minimal.css"
 # TEMPLATE_PATH="./templates/"
 # TEMPLATE_DEFAULT="default"

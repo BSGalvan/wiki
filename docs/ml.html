@@ -129,11 +129,10 @@
 </ul>
 <p>The way this is written, we are optimizing the squared error function over the training set.</p>
 <p>The easiest way to do optimization the gradient descent method. Basically, move in the direction of <span class="math inline">\(-\nabla J\)</span> since that will be the direction of fastest <em>decrease</em>:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="cf">while</span> (<span class="kw">not</span> converged) {</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> j <span class="op">=</span> <span class="dv">1</span>:<span class="bu">len</span>(theta):</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>        theta[j] <span class="op">=</span> theta[j] <span class="op">-</span> alpha <span class="op">*</span> J_grad(theta)</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="cf">while</span> (<span class="kw">not</span> converged) {</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> j <span class="op">=</span> <span class="dv">1</span>:<span class="bu">len</span>(theta):</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>        theta[j] <span class="op">=</span> theta[j] <span class="op">-</span> alpha <span class="op">*</span> J_grad(theta)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
 <h4 id="notation">Notation</h4>
 <ul>
 <li><span class="math inline">\(m\)</span>: <em>number of training examples</em></li>
