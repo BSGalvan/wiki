@@ -1,4 +1,7 @@
-[Back to Top](index)
+---
+title: Rust
+---
+[Back to ToC](index) | [Up one Page](prog-lang)
 
 # Functions
 

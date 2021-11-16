@@ -1,28 +1,28 @@
 ---
 title: Jupyter Notebooks
 ---
-[Back to Top](index)
+[Back to ToC](index) | [Up one Page](index)
 
 TODO The Basics of Python
 
-# Data Types
+## Data Types
   * Types : `int`, `float`, `complex`, `str`
   * Arithmetic operations
 
-# String Operations
+## String Operations
   * slicing
   * `split()` and `join()`
   * `input()`
   * formatting
 
-# Control Flow
+## Control Flow
   * `if-elif-else`
   * `for`, `while` and `do-while` loops
     * `pass`
     * `break`
     * `continue`
 
-# Built-in data structures
+## Built-in data structures
   * lists
     * indexing
     * slicing

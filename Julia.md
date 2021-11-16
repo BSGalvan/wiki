@@ -1,4 +1,7 @@
-[Back to Top](index)
+---
+title: Julia
+---
+[Back to ToC](index) | [Up one Page](prog-lang)
 
 # Functions
 They start with a `function`, and end with an `end`

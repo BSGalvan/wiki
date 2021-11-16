@@ -73,6 +73,7 @@ pandoc_template="pandoc \
     -f $IN_FORMAT \
     -t html5 \
     -c $CSS_FILE \
+    --highlight-style=breezedark \
     -M root_path:$ROOT_PATH"
 
 # echo "$pandoc_template"

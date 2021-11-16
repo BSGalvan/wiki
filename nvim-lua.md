@@ -1,4 +1,7 @@
-[Back to Top](index)
+---
+title: init.vim => init.lua
+---
+[Back to ToC](index) | [Up one Page](index)
 
 DONE Port init.vim to init.lua
 
@@ -6,7 +9,7 @@ DONE Port init.vim to init.lua
   - [X] Bootstrap installation
   - [X] Port all current plugins installed
 - [X] port 'easy-life' autocmds
-- [X] port modular components (config/*.vimrc)
+- [X] port modular components (config/\*.vimrc)
   - [X] sets.vimrc
   - [X] maps.vimrc
   - [X] plug_sets.vimrc
@@ -16,5 +19,6 @@ DONE Port init.vim to init.lua
   - [X] lualine.lua
 
 DONE calculate startup time (CUR:28.362 ms)
-- [X] Current time, after porting to Lua = 26.665 ms. Note that this is
-      before lazy-loading! So considering it a job well done!
+
+- [X] Current time, after porting to Lua = 26.665 ms. Note that this is before
+      lazy-loading! So considering it a job well done!

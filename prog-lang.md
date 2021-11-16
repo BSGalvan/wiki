@@ -1,7 +1,8 @@
-[Back to Top](index)
+---
+title: Notes on Programming Languages
+---
+[Back to ToC](index) | [Up one Page](index)
 
-# Notes on Programming Languages
-  * [Julia](Julia)
-  * [Rust](Rust)
-  * [C](C)
-
+* [Julia](Julia)
+* [Rust](Rust)
+* [C](C)
