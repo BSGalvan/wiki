@@ -1,0 +1,91 @@
+#!/usr/bin/env bash
+
+# === Default Arguments ===
+# Full path of the wiki page : Required!
+WIKI_PATH="$1"
+
+# Default args to process and pass to pandoc
+IN_FORMAT='markdown'
+EXT='md'
+OUT_DIR="./html"
+CSS_FILE="./css/minimal.css"
+TEMPLATE_PATH="./templates/"
+TEMPLATE_DEFAULT="default"
+TEMPLATE_EXT=".html5"
+ROOT_PATH="-"
+
+# === Commandline Arguments ===
+# If commandline args are given, process and pass to pandoc
+
+# Syntax chosen for the wiki
+[[ -n "${2+set}" ]] && IN_FORMAT="$2"
+
+# File extension for the wiki
+[[ -n "${3+set}" ]] && EXT="$3"
+
+# Full path of the output directory
+[[ -n "${4+set}" ]] && OUT_DIR="$4"
+
+# Full path of the css file for this wiki
+[[ -n "${5+set}" ]] && CSS_FILE=$(basename "$5")
+
+# Full path to the wiki's template
+[[ -n "${6+set}" ]] && TEMPLATE_PATH="$6"
+
+# The default template name
+[[ -n "${7+set}" ]] && TEMPLATE_DEFAULT="$7"
+
+# The extension of template files
+[[ -n "${8+set}" ]] && TEMPLATE_EXT="$8"
+
+# Count of '../' for pages buried in subdirs
+[[ -n "${9+set}" ]] && ROOT_PATH="${9}"
+
+# If file is in vimwiki base dir, the root path is '-'
+[[ "$ROOT_PATH" = "-" ]] && ROOT_PATH=''
+
+# === Cleaning up the Arguments ===
+# Example: index.md
+# FILE=$(basename "$WIKI_PATH")
+
+# Example: index
+FILENAME=$(basename "$WIKI_PATH" ."$EXT")
+
+# # Example: /home/bsg/wiki/text/uni/
+# FILEPATH=${WIKI_PATH%"$FILE"}
+
+# Example: /home/bsg/wiki/html/uni/index
+OUTPUT=$OUT_DIR/$FILENAME
+
+# echo "Will save to $OUTPUT.html"
+
+# If you don't have Mathjax locally use this:
+MATHJAX="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
+
+# If you have Mathjax locally use this:
+# MATHJAX="/usr/share/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
+
+# Pre-pandoc Processing
+pandoc_template="pandoc \
+    -s \
+    --template=$TEMPLATE_PATH$TEMPLATE_DEFAULT$TEMPLATE_EXT \
+    --mathjax="$MATHJAX" \
+    -f $IN_FORMAT \
+    -t html5 \
+    -c $CSS_FILE \
+    -M root_path:$ROOT_PATH"
+
+# echo "$pandoc_template"
+
+# Searches for markdown links (without extension or .md) and appends a .html
+regex1='s/(\[[^]]+\])\(([^.)]+)(\.md)?\)/\1(\2.html)/g'
+
+pandoc_input=$(sed -r "$regex1" "$WIKI_PATH")
+pandoc_output=$(echo "$pandoc_input" | $pandoc_template)
+
+# Postpandoc Processing
+
+# Removes "file" from ![pic of sharks](file:../sharks.jpg)
+regex3='s/file://g'
+
+echo "$pandoc_output" | sed -r $regex3 > "$OUTPUT.html"
