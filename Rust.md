@@ -1,7 +1,7 @@
 ---
 title: Rust
 ---
-[Back to ToC](index) | [Up one Page](prog-lang)
+[Up one Page](prog-lang) | [Back to ToC](index)
 
 # Functions
 

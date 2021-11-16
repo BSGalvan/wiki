@@ -1,7 +1,7 @@
 ---
 title: Jupyter Notebooks
 ---
-[Back to ToC](index) | [Up one Page](index)
+[Up one Page](index) | [Back to ToC](index)
 
 TODO The Basics of Python
 

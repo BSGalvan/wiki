@@ -1,7 +1,7 @@
 ---
 title: Notes on Programming Languages
 ---
-[Back to ToC](index) | [Up one Page](index)
+[Up one Page](index) | [Back to ToC](index)
 
 * [Julia](Julia)
 * [Rust](Rust)

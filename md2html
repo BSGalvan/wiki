@@ -9,9 +9,9 @@ IN_FORMAT='markdown'
 EXT='md'
 OUT_DIR="./html"
 CSS_FILE="./css/minimal.css"
-TEMPLATE_PATH="./templates/"
-TEMPLATE_DEFAULT="default"
-TEMPLATE_EXT=".html5"
+# TEMPLATE_PATH="./templates/"
+# TEMPLATE_DEFAULT="default"
+# TEMPLATE_EXT=".html"
 ROOT_PATH="-"
 
 # === Commandline Arguments ===
@@ -67,10 +67,11 @@ MATHJAX="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HT
 
 # Pre-pandoc Processing
 pandoc_template="pandoc \
-    -s \
-    --template=$TEMPLATE_PATH$TEMPLATE_DEFAULT$TEMPLATE_EXT \
-    --mathjax="$MATHJAX" \
+    --standalone \
+    --mathjax=$MATHJAX \
+    --preserve-tabs \
     -f $IN_FORMAT \
+    --toc \
     -t html5 \
     -c $CSS_FILE \
     --highlight-style=breezedark \

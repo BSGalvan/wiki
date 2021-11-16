@@ -1,14 +1,19 @@
 ---
-title: Table of Contents
+title: Welcome to the Wiki!
 ---
 
-## Project Ideas
-  * [vimming](vimming)
-  * [Build-a-PC](pc-build)
+Here's a detailed list of all the topics in the wiki.
+
+### Completed Projects
   * [Neovim config using lua](nvim-lua)
 
-## Project Plans
+### Works In Progress
   * [Jupyter Notebooks](jupyter-notebooks)
 
-# Notes
+### Ideas for Future Projects
+  * [Contribute to Vim/Neovim](vim-contrib)
+  * [Build a PC](pc-build)
+
+### Notes on Various Things
   * [Programming Languages](prog-lang)
+  * [Machine Learning](ml)

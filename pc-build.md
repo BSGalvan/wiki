@@ -1,7 +1,7 @@
 ---
 title: PC Build Requirements
 ---
-[Back to ToC](index) | [Up one Page](index)
+[Up one Page](index) | [Back to ToC](index)
 
 # Work Environment
   * Most probably Arch/Arch-based. Consider NixOS?

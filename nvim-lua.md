@@ -1,7 +1,7 @@
 ---
 title: init.vim => init.lua
 ---
-[Back to ToC](index) | [Up one Page](index)
+[Up one Page](index) | [Back to ToC](index)
 
 DONE Port init.vim to init.lua
 
