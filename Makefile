@@ -10,12 +10,13 @@ SRCS := $(wildcard $(SRCDIR)/*.md)
 DOCS := $(SRCS:$(SRCDIR)/%.md=$(DESTDIR)/%.html)
 
 CSS := css/minimal.css
+TEMPLATE := templates/github.html
 HL_STYLE := breezedark
 IN_FMT := markdown
 MATHJAX_URI := https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML
 OUT_FMT := html5
 
-PANDOC_FLAGS := -s --mathjax=$(MATHJAX_URI) -f $(IN_FMT) -t $(OUT_FMT) -c $(CSS) --highlight-style=$(HL_STYLE)
+PANDOC_FLAGS := --template=$(TEMPLATE) --mathjax=$(MATHJAX_URI) -f $(IN_FMT) -t $(OUT_FMT) -c $(CSS) --highlight-style=$(HL_STYLE)
 
 .PHONY: all clean start end
 
