@@ -1,5 +1,6 @@
 /* Hacked together based on:
  * https://jgthms.com/web-design-in-4-minutes/ 
+ * along with a few extra tricks and edits
  */
 
 * {
@@ -12,24 +13,26 @@ html {
 
 body {
   background: #111;
-  color: #eee;
+  color: #c6c6c6;
   margin: 0 auto;
-  max-width: 80em;
+  max-width: 60em;
   font-family: "Fira Sans", "Arial", sans-serif;
   line-height: 1.5;
-  padding: 2em 1em;
+  padding: 2em 2em;
 }
 
 h1 {
-  font-size: 2.5em
+  font-size: 2.5em;
 }
 
 h2 {
   font-size: 2em;
+  font-weight: 400;
 }
 
 h3 {
-  font-size: 1.5em
+  font-size: 1.5em;
+  font-weight: 400;
 }
 
 h2, h3 {
@@ -37,7 +40,7 @@ h2, h3 {
 }
 
 h1, h2, strong {
-  color: #b2b2b2;
+  color: #e4e4e4;
 }
 
 code, pre {
@@ -51,7 +54,7 @@ code {
 }
 
 pre {
-  border-left: 2px solid #80a0ff;
+  border-left: 2px solid #ae81ff;
   padding: 1em;
 }
 
@@ -60,12 +63,12 @@ a {
 }
 
 a:hover { 
-  color: #8cc85f;
+  color: #85dc85;
   font-weight: bold;
 }
 
 blockquote, q {
-  border-left: solid 4px #bbb;
+  border-left: solid 4px #e3c78a;
   font-style: italic;
   margin: 0 0 2em 0;
   padding: 0.5em 0 0.5em 2em;
@@ -74,4 +77,30 @@ blockquote, q {
 blockquote::before, blockquote::after, q::before, q::after {
     content: '';
     content: none;
+}
+
+header h1 {
+    color: white;
+    font-weight: 500;
+    text-align: center;
+}
+
+.toc-title{
+  font-size: 1.35em;
+  font-weight: 400;
+  margin: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.sidenav {
+    width: auto; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 20px; /* Stay at the top */
+    left: 20px;
+    border-radius: 10px;
+    background-color: #111;
+    padding-right: 20px;
+    overflow-x: hidden; /* Disable horizontal scroll */
 }
