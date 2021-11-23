@@ -9,7 +9,7 @@ DESTDIR := docs
 SRCS := $(wildcard $(SRCDIR)/*.md)
 DOCS := $(SRCS:$(SRCDIR)/%.md=$(DESTDIR)/%.html)
 
-CSS := css/minimal.css
+CSS := css/minimal_gruvbox.css
 TEMPLATE := templates/github.html
 HL_STYLE := breezedark
 IN_FMT := markdown

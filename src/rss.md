@@ -41,8 +41,8 @@ Feel free to poke around and find others which may suit your needs better! The
 ones above are just the ones I have used (newsboat, Feeder) or have looked into
 briefly (RSSGuard, Feedly).
 
-_**Note**_: Remember to double check who is the app publisher on Google Play! There
-are quite a few apps named Feeder, which look similar but only the one by
+_**Note**_ -- Remember to double check who is the app publisher on Google Play!
+There are quite a few apps named Feeder, which look similar but only the one by
 NoNonsenseApps is, well, no nonsense!
 
 ---
@@ -60,11 +60,11 @@ rest assured that almost every website worth following has an RSS feed.
 Also, I should tell you now that RSS is not _just_ for news. See [more exotic
 sources](####more-exotic-sources) for more information!
 
-_**Note**_: even if some websites don't, there's software out there to _create_ an
-RSS feed out of a website for you, for example, see
+_**Note**_ -- even if some websites don't, there's software out there to
+_create_ an RSS feed out of a website for you, for example, see
 [rss-bridge](https://github.com/RSS-Bridge/rss-bridge). However, I currently do
-not know of a "just werks" way of setting that up, so I'll leave it as
-an exercise for interested readers.
+not know of a "just werks" way of setting that up, so I'll leave it as an
+exercise for interested readers.
 
 Alright, with the challenge ahead of us clear, here are some tips on where to find RSS feeds:
 
@@ -100,7 +100,7 @@ feed for the corresponding item. For example,
   ``` 
   https://reddit.com/u/andromeda321.rss
   ```
-_**Author's Note**_: with that being said, I recommend using [libreddit](libredd.it) or
+_**Author's Note**_ -- with that being said, I recommend using [libreddit](libredd.it) or
 [teddit](teddit.net) as a Reddit frontend since they are way more
 privacy-focused, not to mention light on your browsers!
 
@@ -135,7 +135,7 @@ https://www.youtube.com/feeds/videos.xml?channel_id=UCYO_jab_esuFRV4b17AJtAw
 If you have an legacy-style URL ending in `user/username`, replace the
 `?channel_id=` chunk with `?user=username`.
 
-_**Author's Note**_: again, that being said, I recommend using an [Invidious
+_**Author's Note**_ -- again, that being said, I recommend using an [Invidious
 instance](https://docs.invidious.io/Invidious-Instances.md), since they are
 more privacy-focused. Try to pick an instance which doesn't use Cloudflare!
 
@@ -179,10 +179,10 @@ nitter to get your RSS feeds:
   ```
 
 
-_**Note**_: nitter allows for _way_ more fine-grained control on which tweets to put
-in your RSS feed. For example, you can exclude retweets, verified tweets,
-videos and so on. See the search bar dropdown menu for (easier) access to these
-knobs.
+_**Note**_ -- nitter allows for _way_ more fine-grained control on which tweets
+to put in your RSS feed. For example, you can exclude retweets, verified
+tweets, videos and so on. See the search bar dropdown menu for (easier) access
+to these knobs.
 
 ---
 
@@ -199,7 +199,6 @@ One very interesting use case is to follow the Twitter handles of reputed news
 agencies (such as ANI/PTI/Reuters/Agence France-Presse etc.) via Feeder +
 nitter. This enables you to **bypass Twitter entirely**!
 
-_**Note**_: I know it is ironic that this wiki doesn't have an RSS feed. Once
-I write frequently enough to have a reason to write the code for
-generating an RSS feed, rest assured, I will. No need to go shave that
-yak just yet!
+_**Note**_ -- I know it is ironic that this wiki doesn't have an RSS feed. Once
+I write frequently enough to have a reason to write the code for generating an
+RSS feed, rest assured, I will. No need to go shave that yak just yet!
